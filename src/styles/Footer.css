@@ -1,0 +1,186 @@
+/* ===== FOOTER MAIN ===== */
+.footer {
+  position: relative;
+  background: linear-gradient(120deg, #09081bde, #04191f);
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+/* Hover Effect */
+.footer:hover {
+  background: linear-gradient(135deg, #04191f, #09081bde);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Click Effect */
+.footer:active {
+  transform: scale(0.98);
+}
+
+/* Light overlay (important fix) */
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  background: rgba(255, 240, 240, 0.85);
+  z-index: 0;
+}
+
+/* ===== FOOTER CONTAINER ===== */
+.footer-container {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding: 60px 80px;
+}
+
+/* ===== FOOTER COLUMNS ===== */
+.footer-col h3 {
+  margin-bottom: 18px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+  position: relative;
+}
+
+/* Underline for headings */
+.footer-col h3::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background: #b30000;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  border-radius: 4px;
+}
+
+.footer-col p {
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* ===== LIST STYLING ===== */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+  font-size: 14.5px;
+  cursor: pointer;
+  color: #222;
+  transition: 0.3s ease;
+  position: relative;
+  padding-left: 12px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #ef771b;
+}
+
+/* Bullet hover effect */
+.footer-col ul li::before {
+  content: "›";
+  position: absolute;
+  left: 0;
+  color: #b30000;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.footer-col ul li:hover {
+  color: #b30000;
+  padding-left: 18px;
+}
+
+.footer-col ul li:hover::before {
+  opacity: 1;
+}
+
+/* ===== FOOTER BOTTOM ===== */
+.footer-bottom {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 18px;
+  font-size: 14px;
+  background: rgba(0, 0, 0, 0.08);
+  color: #111;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1000px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    padding: 40px 25px;
+  }
+
+  .footer-col h3 {
+    font-size: 18px;
+  }
+}
+
+.footer {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+/* 🔥 Dark overlay to reduce brightness */
+.footer::before {
+  content: "";
+  position: absolute;
+  top: o;
+  background: rgba(248, 244, 244, 0.65); /* Increase = darker image */
+  z-index: 0;
+}
+
+.footer-container,
+.footer-bottom {
+  position: relative;
+  z-index: 1;
+}
+
+/* Heading Highlight */
+.footer-col h3 {
+  color: #ffffff;
+  font-weight: 900;
+}
+
+/* Text Highlight */
+.footer-col p,
+.footer-col ul li {
+  color: #f9f5f5;
+}
+
+/* Hover Highlight */
+.footer-col ul li:hover {
+  color: #ffcc00;
+}

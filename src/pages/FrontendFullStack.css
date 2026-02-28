@@ -1,0 +1,270 @@
+/* ===== GENERAL ===== */
+.ffs-page {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.ffs-content h1, .ffs-content h2, .ffs-content h3, .ffs-content h4 {
+  color: #b30000;
+}
+
+.ffs-content p {
+  line-height: 1.8;
+  color: #444;
+}
+
+/* ===== HERO ===== */
+.ffs-hero {
+  margin-top: 30px;
+  background-image: url("/images/frontend banner 1.png");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  padding: 90px 20px;
+  text-align: center;
+  color: white;
+}
+
+.ffs-hero-content h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.ffs-hero-content p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.ffs-hero-buttons {
+  margin-top: 25px;
+}
+
+.primary-btn {
+  padding: 14px 40px;
+  background: #b30000;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  font-weight: bold;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.secondary-btn {
+  padding: 14px 40px;
+  background: white;
+  color: #b30000;
+  border: none;
+  border-radius: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ===== HIGHLIGHTS ===== */
+.course-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  background: linear-gradient(90deg, #fff3f3, #ffeaea);
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.highlight-card h3 {
+  font-size: 22px;
+  color: #b30000;
+  margin-bottom: 5px;
+}
+
+.highlight-card p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* ===== SECTIONS ===== */
+.ffs-content {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.ffs-content section {
+  margin-bottom: 60px;
+}
+
+.ffs-content h2 {
+  font-size: 2.2rem;
+  color: #b30000;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.ffs-content h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #e17b61;
+  margin-top: 6px;
+  border-radius: 2px;
+}
+
+.ffs-content p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.ffs-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.ffs-content ul li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.ffs-content ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #b30000;
+}
+
+/* ===== WHY CHOOSE SECTION ===== */
+.ffs-why ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.ffs-why ul li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.ffs-why ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #b30000;
+}
+
+
+/* ===== CAREER STEPS ===== */
+.career-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.career-step {
+  background-color: #fff0f0;
+  padding: 20px 25px;
+  border-radius: 12px;
+  flex: 1 1 200px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.career-step span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #e17b61;
+  color: white;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.career-step p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.career-step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* ===== CTA ===== */
+.ffs-cta {
+  padding: 30px;
+  text-align: center;
+  color: white;
+  border-radius: 12px;
+  margin-top: 20px;
+  background: url("/images/frontend developer.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-subtext {
+  font-size: 20px;
+  font-weight: 500;
+  max-width: 800px;
+  margin: 10px auto 15px;
+  line-height: 1.7;
+}
+
+.cta-subtext h5 {
+  color: hsl(0, 11%, 93%);
+  font-size: 12px;
+}
+
+.cta-buttons {
+  margin-top: 10px;
+}
+
+.secondary-btn {
+  padding: 10px 15px;
+  margin-left: 15px;
+  background: white;
+  color: #b30000;
+  border: none;
+  border-radius: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .ffs-content h2 {
+    font-size: 2rem;
+  }
+  .career-step {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .ffs-hero {
+    height: 300px;
+    padding: 60px 20px;
+  }
+  .career-step {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .primary-btn, .secondary-btn {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+  }
+  .cta-subtext {
+    font-size: 1.2rem;
+  }
+}

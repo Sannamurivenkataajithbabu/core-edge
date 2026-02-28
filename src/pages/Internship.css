@@ -1,0 +1,154 @@
+.internship-page {
+  padding: 40px;
+  background: #f8f9fa;
+}
+
+/* Page Title */
+.page-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #c84848;
+}
+
+/* Heading Section */
+.internship-heading {
+  text-align: center;
+  margin: 20px auto 10px;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+.internship-heading h1 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #aa5252;
+  margin-bottom: 10px;
+}
+
+.internship-heading p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ✅ Horizontal Scrolling Container */
+.internship-container {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 30px;
+  margin-top: 20px;
+  padding: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.scroll-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Scroll Buttons */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #c84848;
+  color: white;
+  border: none;
+  font-size: 26px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 5;
+  transition: 0.3s;
+}
+
+.scroll-btn:hover {
+  background: #ff7171;
+}
+
+.scroll-btn.left {
+  left: -15px;
+}
+
+.scroll-btn.right {
+  right: -15px;
+}
+
+
+/* Internship Cards */
+.about-feature-box {
+  background: #fff3f3;
+  padding: 15px;
+  border-radius: 16px;
+  text-align: center;
+  border-left: 5px solid #ff7171;
+  transition: 0.3s;
+  min-width: 160px;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  min-width: 280px;
+}
+
+.about-feature-box:hover {
+  transform: translateY(-5px);
+}
+
+.about-feature-box img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.about-feature-box h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #aa5252;
+}
+
+.about-feature-box p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Certification Section */
+.certification-section {
+  background: #fd7672;
+  color: white;
+  padding: 25px 15px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.certification-section h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.certification-section p {
+  max-width: 900px;
+  margin: auto;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Hero Banner */
+.internship-hero {
+  height: 320px;
+  background: url("/images/internship.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}

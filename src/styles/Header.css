@@ -1,0 +1,132 @@
+/* ===== HEADER ===== */
+.main-header {
+  background: linear-gradient(135deg, #f7b27d, #f57e71);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  border-bottom: 2px solid rgba(0,0,0,0.05);
+  position: fixed;     /* 🔑 FIXED HEADER */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  /* IMPORTANT → prevents sticky */
+  position: relative;
+}
+
+/* ===== INNER HEADER ===== */
+.header-inner {
+  max-width: 1500px;
+  margin: auto;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ===== BRAND ===== */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  cursor: pointer;
+}
+
+/* LOGO */
+.logo {
+  width: 150px;
+  height: 120px;
+  transition: 0.3s ease;
+  padding-left: 0px;
+}
+
+.logo:hover {
+  transform: scale(1.07);
+}
+
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* NAV LINKS */
+.navbar a,
+.dropbtn {
+  text-decoration: none;
+  color: #111;
+  font-weight: 700;
+  font-size: 16px;
+  position: relative;
+  transition: 0.3s;
+  padding: 6px 0;
+}
+
+/* Underline Animation */
+.navbar a::after,
+.dropbtn::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  bottom: -6px;
+  left: 50%;
+  background: #b30000;
+  transition: 0.35s;
+  transform: translateX(-50%);
+  border-radius: 4px;
+}
+
+.navbar a:hover::after,
+.dropbtn:hover::after {
+  width: 100%;
+}
+
+.navbar a:hover,
+.dropbtn:hover {
+  color: #b30000;
+}
+
+/* ===== DROPDOWN ===== */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 130%;
+  left: 0;
+  background: white;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  padding: 10px 0;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  transition: 0.35s ease;
+
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+}
+
+.dropdown-content a {
+  padding: 12px 20px;
+  font-size: 14px;
+  transition: 0.3s;
+  border-left: 3px solid transparent;
+}
+
+.dropdown-content a:hover {
+  background: #fff0f0;
+  border-left: 3px solid #b30000;
+  padding-left: 28px;
+}
+
+/* SHOW DROPDOWN */
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
